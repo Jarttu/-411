@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Rekisteröitymislomake</h1>
+        <form>
+            <label for="kayttaja">Käyttäjä ID:</label>
+            <input type="text" id="kayttaja" tabindex="1"><br><br>
+
+            <label for="salis">Salasana:</label>
+            <input type="password" id="salis" tabindex="2"><br><br>
+
+            <label for="nimi">Nimi:</label>
+            <input type="text" id="nimi" tabindex="3"><br><br>
+
+            <label for="osote">Osoite:</label>
+            <input type="text" id="osote" tabindex="4"><br><br>
+
+            <label for="maat">Maa:</label>
+            <select name="maa" id="maat">
+                <option value="vmaa">(Valitse maa)</option>
+                <option value="suomi">Suomi</option>
+                <option value="englanti">Englanti</option>
+                <option value="ruotsi">Ruotsi</option>
+                <option value="venaja">Venäjä</option>
+                <option value="saksa">Saksa</option>
+            </select><br><br>
+
+            <label for="pnumero">Postinumero:</label>
+            <input type="text" id="pnumero" tabindex="5"><br><br>
+
+            <label for="sposti">Sähköposti:</label>
+            <input type="text" id="sposti" tabindex="6"><br><br>
+
+            <label for="spuoli">Sukupuoli:</label>
+            <input type="radio" id="mies" value="mies" name="spuoli">
+            <label for="mies">Mies</label>
+            <input type="radio" id="nainen" value="nainen" name="spuoli">
+            <label for="nainen">Nainen</label><br><br>
+
+            <label for="kieli">Kieli:</label>
+            <input type="checkbox" id="suomik" value="kieli1">
+            <label for="suomik">Suomi</label>
+            <input type="checkbox" id="englantik" value="kieli2">
+            <label for="englantik">Englanti</label>
+            <input type="checkbox" id="muuk" value="muu">
+            <label for="muuk">Muu kuin suomi</label><br><br>
+
+            <input type="submit" id="tarkista" value="Tarkista">
+        </form>
+        <p id="tulostus">
+
+        </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
